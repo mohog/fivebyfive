@@ -1,7 +1,6 @@
 # inspired from https://twitter.com/GeekMomProjects/status/1483695065629224960
-# see https://dev.to/andypiper/bringing-the-bling-with-micropython-hn1
 
-# this is a random color, random display and sleep length smiley face
+# this is a random color, random display and sleep length smiley face that winks
 # should not require any additional Python modules outside of core MicroPython
 
 from machine import Pin
