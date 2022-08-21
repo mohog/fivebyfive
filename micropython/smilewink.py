@@ -1,6 +1,7 @@
 # inspired from https://twitter.com/GeekMomProjects/status/1483695065629224960
+# see https://dev.to/andypiper/bringing-the-bling-with-micropython-hn1
 
-# this is a random color, random display and sleep length smiley face that winks
+# this is a random color, random display and sleep length smiley face
 # should not require any additional Python modules outside of core MicroPython
 
 from machine import Pin
@@ -39,6 +40,7 @@ def smile():
         np[x] = rgb
         np[20] = 0,0,0
         np[24] = 0,0,0
+
     np.write()
 
 def mmmm():
@@ -68,7 +70,7 @@ while True:
  smile()
  time.sleep(0.3)
  wink()
- time.sleep(0.3)
+ time.sleep(0.6)
  smile()
  ranshow = random.randint(1,5)
  time.sleep(ranshow)
